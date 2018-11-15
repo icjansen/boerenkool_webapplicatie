@@ -3,9 +3,7 @@ include 'includes/header.php';
 ?>
     <div class="container-fluid desktop_version">
         <div class="container col-sm-3">
-            <h2>Dynamic Tabs</h2>
-            <p>To make the tabs toggleable, add the data-toggle="tab" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
-
+            <img src="images/logoaventus.png" alt="logo" >
             <ul class="nav nav-tabs nav-stacked">
                 <li class="active"><a data-toggle="tab" href="#menu1">Webapplicaties</a></li>
                 <li><a data-toggle="tab" href="#menu2">Desktopapplicaties</a></li>

@@ -9,3 +9,7 @@
         display: none;
     }
 }
+.navbar-brand > img {
+    max-height: 175%;
+    height: 175%;
+}
