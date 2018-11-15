@@ -50,3 +50,61 @@
     border: solid black 1px;
 
 }
+
+.nav-stacked{
+    border: none!important;
+}
+
+.active a{
+    border: none!important;
+    background-color: lightgrey!important;
+}
+
+.custom_card .card_btn{
+    background-color: #7861A4!important;
+}
+
+.desktop_version{
+    background-color: #C8C500;
+    height: 100%;
+}
+
+.desktop_version li{
+    font-size: 2em;
+    height: 80px;
+}
+
+.desktop_version a{
+    height: inherit;
+    line-height: 60px!important;
+}
+
+/*.content_container{*/
+    /*height: 750px;*/
+/*}*/
+
+.page_container{
+    height: 750px;
+}
+
+.desktop_version .nav-stacked{
+    margin-top: 15%;
+}
+
+.nav_link{
+    border-top: solid darkgray 1px!important;
+    border-bottom: solid darkgray 1px!important;
+}
+
+.mobile_version{
+    border: none!important;
+}
+
+.navbar-toggle{
+    border: none!important;
+}
+
+.icon-bar{
+    background-color: black!important;
+    height: 4px!important;
+}
