@@ -24,9 +24,9 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav nav-tabs nav-stacked">
-                <li class="active"><a data-toggle="tab" href="#home">Webapplicaties</a></li>
-                <li><a data-toggle="tab" href="#menu1">Desktopapplicaties</a></li>
-                <li><a data-toggle="tab" href="#menu2">Games</a></li>
+                <li class="active"><a data-toggle="tab" href="#menu1">Webapplicaties</a></li>
+                <li><a data-toggle="tab" href="#menu2">Desktopapplicaties</a></li>
+                <li><a data-toggle="tab" href="#menu3">Games</a></li>
             </ul>
         </div>
     </div>
