@@ -5,16 +5,27 @@ include 'includes/header.php';
         <div class="container col-sm-3">
             <img src="images/logoaventus.png" alt="logo" >
             <ul class="nav nav-tabs nav-stacked">
-                <li class="active"><a data-toggle="tab" href="#menu1">Webapplicaties</a></li>
-                <li><a data-toggle="tab" href="#menu2">Desktopapplicaties</a></li>
-                <li><a data-toggle="tab" href="#menu3">Games</a></li>
+                <li class="active"><a data-toggle="tab" href="#home">Webapplicaties</a></li>
+                <li><a data-toggle="tab" href="#menu1">Desktopapplicaties</a></li>
+                <li><a data-toggle="tab" href="#menu2">Games</a></li>
             </ul>
+
+
         </div>
         <div class="col-sm-9">
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
                     <h3>Webapplicaties</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="custom_card col-xs-12 col-sm-4">
+                        <div class="card_img">
+
+                        </div>
+                        <h5 class="card_title"></h5>
+                        <div class="card_text">
+
+                        </div>
+                        <a class="card_btn btn btn-primary" href="#">Ga naar project</a>
+                    </div>
                 </div>
                 <div id="menu1" class="tab-pane fade">
                     <h3>Desktopapplicaties</h3>
