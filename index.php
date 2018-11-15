@@ -20,25 +20,35 @@ include 'includes/header.php';
                     <h3>Webapplicaties</h3>
                     <div class="custom_card col-xs-12 col-sm-4">
                         <div class="card_img">
-
+                            <img src="images/placeholder.png" alt="project_thumbnail" style="width: 100%; height: 100%;">
                         </div>
-                        <h5 class="card_title"></h5>
+                        <h4 class="card_title">Projectnaam</h4>
                         <div class="card_text">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat.
 
+                            </p>
                         </div>
                         <a class="card_btn btn btn-primary" href="#">Ga naar project</a>
                     </div>
                 </div>
-                <div id="menu1" class="tab-pane fade">
-                    <h3>Desktopapplicaties</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div id="menu2" class="tab-pane fade">
-                    <h3>Games</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Desktopapplicaties</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Games</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
         </div>
+    </div>
     </div>
 
 <?php
