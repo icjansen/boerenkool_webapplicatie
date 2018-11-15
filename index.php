@@ -40,13 +40,47 @@ include 'includes/header.php';
                 </div>
                 <div id="menu2" class="tab-pane fade">
                     <h3>Desktopapplicaties</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</p>
+                    <?php
+                    $sql2 = "SELECT * FROM project WHERE type = 'desktop'";
+                    $result2=$conn->query($sql2);
+                    while($row2=mysqli_fetch_array($result2)) {
+                        ?>
+                        <div class="custom_card col-xs-12 col-sm-4">
+                            <div class="card_img">
+                                <img src="<?php echo $row2['project_thumbnail'] ?>" alt="project_thumbnail"
+                                     style="width: 100%; height: 100%;">
+                            </div>
+                            <h4 class="card_title"><?php echo $row2['project_name'] . ", gemaakt door " . $row2['student_name'] ?></h4>
+                            <div class="card_text">
+                                <p><?php echo $row2['project_description'] ?></p>
+                            </div>
+                            <a class="card_btn btn btn-primary" href="#">Ga naar project</a>
+                        </div>
+                        <?php
+                    }
+                    ?>
                 </div>
                 <div id="menu3" class="tab-pane fade">
                     <h3>Games</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                        totam rem aperiam.</p>
+                    <?php
+                    $sql3 = "SELECT * FROM project WHERE type = 'game'";
+                    $result3=$conn->query($sql3);
+                    while($row3=mysqli_fetch_array($result3)) {
+                        ?>
+                        <div class="custom_card col-xs-12 col-sm-4">
+                            <div class="card_img">
+                                <img src="<?php echo $row3['project_thumbnail'] ?>" alt="project_thumbnail"
+                                     style="width: 100%; height: 100%;">
+                            </div>
+                            <h4 class="card_title"><?php echo $row3['project_name'] . ", gemaakt door " . $row3['student_name'] ?></h4>
+                            <div class="card_text">
+                                <p><?php echo $row3['project_description'] ?></p>
+                            </div>
+                            <a class="card_btn btn btn-primary" href="#">Ga naar project</a>
+                        </div>
+                        <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>

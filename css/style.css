@@ -79,9 +79,9 @@
     line-height: 60px!important;
 }
 
-/*.content_container{*/
-    /*height: 750px;*/
-/*}*/
+.content_container{
+    margin-top: 2%;
+}
 
 .page_container{
     height: 750px;
