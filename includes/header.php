@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse mobile_version">
+<nav class="navbar navbar-inverse mobile_version" style="background-color: #C8C500 ">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -20,7 +20,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">WebSiteName</a>
+            <a class="navbar-brand"><img alt="Brand" src="images/logoaventus.png"class="img-logo" /></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav nav-tabs nav-stacked">
