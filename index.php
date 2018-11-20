@@ -46,20 +46,56 @@ include 'Classes/ProjectDetails.php';
                                     </div>
                                     <div class="modal-body project_details">
                                         <div class="img_container col-xs-12 col-sm-6">
-                                            <?php
-                                            $project2 = new ProjectDetails();
-                                            $result2 = $project2->getProjectDetails($project_id);
-                                            while($row2=mysqli_fetch_array($result2)) {
-                                                ?>
-                                                <img src="<?php echo $row2['image'] ?>" alt="slides" class="project_images">
-                                            <?php } ?>
+
+                                            <h2>Carousel Example</h2>
+                                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                                                <div class="carousel-inner">
+
+                                                    <?php
+                                                    $project2 = new ProjectDetails();
+                                                    $result2 = $project2->getProjectDetails($project_id);
+                                                    $i = 0;
+                                                    while($row2=mysqli_fetch_array($result2)) {
+                                                        $i++;
+                                                        var_dump($row2[0]);
+                                                        ?>
+
+
+
+
+                                                        <div class="item<?php if($i == 1) { echo " active"; } ?>">
+                                                            <img src="./images/placeholder.png" alt="Los Angeles" style="width:100%;">
+                                                        </div>
+
+                                                        <?php
+                                                    } ?>
+
+
+
+                                                    <!-- Left and right controls -->
+                                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+
+
+
                                         </div>
                                         <div class="text_container col-xs-12 col-sm-6">
                                             ergewgfrehgrefgrt
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                        <a href="" class="btn btn-success visit_website">Bezoek website</a>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Sluiten
                                         </button>
                                     </div>
                                 </div>
