@@ -1,5 +1,5 @@
 <?php
-include 'includes/connect.php';
+require_once 'Classes/Database.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

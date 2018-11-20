@@ -1,5 +1,6 @@
 <?php
 include 'includes/header.php';
+include 'Classes/Project.php';
 ?>
     <div class="container-fluid page_container">
         <div class="container col-sm-3 desktop_version">
@@ -18,8 +19,8 @@ include 'includes/header.php';
                 <div id="menu1" class="tab-pane fade">
                     <h3>Webapplicaties</h3>
                     <?php
-                    $sql = "SELECT * FROM project WHERE type = 'web'";
-                    $result=$conn->query($sql);
+                    $project = new Project();
+                    $result = $project->getProjects("web");
                     while($row=mysqli_fetch_array($result)) {
                         ?>
                         <div class="custom_card col-xs-12 col-sm-4">
@@ -41,9 +42,9 @@ include 'includes/header.php';
                 <div id="menu2" class="tab-pane fade">
                     <h3>Desktopapplicaties</h3>
                     <?php
-                    $sql2 = "SELECT * FROM project WHERE type = 'desktop'";
-                    $result2=$conn->query($sql2);
-                    while($row2=mysqli_fetch_array($result2)) {
+                    $project = new Project();
+                    $result = $project->getProjects("desktop");
+                    while($row2=mysqli_fetch_array($result)) {
                         ?>
                         <div class="custom_card col-xs-12 col-sm-4">
                             <div class="card_img">
@@ -63,9 +64,9 @@ include 'includes/header.php';
                 <div id="menu3" class="tab-pane fade">
                     <h3>Games</h3>
                     <?php
-                    $sql3 = "SELECT * FROM project WHERE type = 'game'";
-                    $result3=$conn->query($sql3);
-                    while($row3=mysqli_fetch_array($result3)) {
+                    $project = new Project();
+                    $result = $project->getProjects("game");
+                    while($row3=mysqli_fetch_array($result)) {
                         ?>
                         <div class="custom_card col-xs-12 col-sm-4">
                             <div class="card_img">

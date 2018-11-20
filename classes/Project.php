@@ -12,9 +12,11 @@ class Project
 
     }
 
-    public function getProjects(){
+    public function getProjects($type){
         $db = Database::getInstance();
         $conn = $db->getConnection();
-        $sql = "SELECT * FROM project WHERE type = 'web'";
+        $sql = "SELECT * FROM project WHERE type = '$type'";
+        $result = $conn->query($sql);
+        return $result;
     }
 }
