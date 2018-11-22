@@ -55,7 +55,7 @@
     border: none!important;
 }
 
-.active a{
+.nav-stacked .active a{
     border: none!important;
     background-color: lightgrey!important;
 }
