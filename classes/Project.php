@@ -20,11 +20,11 @@ class Project
         return $result;
     }
 
-    public function getProjectDetails($project_id){
-        $db = Database::getInstance();
-        $conn = $db->getConnection();
-        $sql = "SELECT * FROM project WHERE type = '$project_id'";
-        $result = $conn->query($sql);
-        return $result;
-    }
+//    public function getProjectDetails($project_id){
+//        $db = Database::getInstance();
+//        $conn = $db->getConnection();
+//        $sql = "SELECT * FROM project WHERE type = '$project_id'";
+//        $result = $conn->query($sql);
+//        return $result;
+//    }
 }

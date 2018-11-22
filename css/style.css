@@ -17,7 +17,7 @@
 
 .custom_card{
     height: 500px;
-    border: solid darkgray 1px;
+    border: solid #F47B20 1px;
     padding: 15px;
     border-radius: 5px;
 }
@@ -65,8 +65,14 @@
 }
 
 .desktop_version{
-    background-color: #C8C500;
+    /*background-color: #C8C500;*/
+    background-color: #F47B20;
     height: 100%;
+}
+
+.mobile_version{
+    /*background-color: #C8C500;*/
+    background-color: #F47B20!important;
 }
 
 .desktop_version li{
@@ -110,7 +116,13 @@
 }
 
 .modal-lg{
-    width: 75%!important;
+    width: 75%;
+}
+
+@media only screen and (max-width: 667px){
+    .modal-lg{
+        width: 95%;
+    }
 }
 
 /*.project_details{*/
@@ -119,4 +131,8 @@
 
 .visit_website{
     background-color: #C8C500!important;
+}
+
+.text_container{
+    padding: 5%;
 }
