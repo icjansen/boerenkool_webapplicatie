@@ -16,7 +16,7 @@
 }
 
 .custom_card{
-    height: 500px;
+    height: 550px;
     border: solid #F47B20 1px;
     padding: 15px;
     border-radius: 5px;
@@ -35,11 +35,16 @@
 
 .card_title{
     font-weight: bold;
+    font-size: 2em;
 }
 
 .card_text{
     height: 150px;
     overflow: hidden;
+    font-size: 1.5em;
+}
+
+.custom_card .card_text p{
     text-overflow: ellipsis;
 }
 
@@ -65,14 +70,14 @@
 }
 
 .desktop_version{
-    /*background-color: #C8C500;*/
-    background-color: #F47B20;
-    height: 100%;
+    background-color: #C8C500;
+    /*background-color: #F47B20;*/
+    height: 100vh;
 }
 
 .mobile_version{
-    /*background-color: #C8C500;*/
-    background-color: #F47B20!important;
+    background-color: #C8C500;
+    /*background-color: #F47B20!important;*/
 }
 
 .desktop_version li{
@@ -87,10 +92,18 @@
 
 .content_container{
     margin-top: 2%;
+    max-height: 93vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#home{
+    overflow: hidden!important;
 }
 
 .page_container{
     height: 750px;
+    margin-left: -15px;
 }
 
 .desktop_version .nav-stacked{
@@ -135,4 +148,8 @@
 
 .text_container{
     padding: 5%;
+}
+
+.nav-tabs li a{
+    color: #3F3E40;
 }
