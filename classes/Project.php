@@ -20,10 +20,10 @@ class Project
         return $result;
     }
 
-    public function getAllProjects(){
+    public function getAllProjects($course){
         $db = Database::getInstance();
         $conn = $db->getConnection();
-        $sql="SELECT * FROM project";
+        $sql="SELECT * FROM project WHERE course='$course'";
         $result = $conn->query($sql);
         return $result;
     }
