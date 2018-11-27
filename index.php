@@ -9,15 +9,15 @@ include 'Classes/ProjectDetails.php';
             <ul class="nav nav-tabs nav-stacked">
                 <li><a data-toggle="tab" href="#menu1" class="nav_link">Webapplicaties</a></li>
                 <li><a data-toggle="tab" href="#menu2">Desktopapplicaties</a></li>
-                <li><a data-toggle="tab" href="#menu3" class="nav_link">Games</a></li>
-                <li><a data-toggle="tab" href="#menu4" class="nav_link">Applicatieontwikkeling</a></li>
+                <li><a data-toggle="tab" href="#menu3" class="nav_link2">Games</a></li>
+                <li><a data-toggle="tab" href="#menu4" class="course_nav_link">Applicatieontwikkeling</a></li>
                 <li><a data-toggle="tab" href="#menu5" class="nav_link">Gamedevelopment</a></li>
             </ul>
         </div>
         <div class="col-sm-9 content_container">
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
-                    <h3>Kies in de navigatiebalk aan de linkerkant een type applicatie om te sorteren.</h3>
+                    <h3>Kies in de navigatiebalk een type applicatie om te sorteren.</h3>
                 </div>
                 <div id="menu1" class="tab-pane fade">
                     <h3>Webapplicaties</h3>
