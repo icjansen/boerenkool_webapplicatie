@@ -44,7 +44,7 @@ include 'Classes/ProjectDetails.php';
                     ?>
                 </div>
                 <div id="menu4" class="tab-pane fade">
-                    <h3>Games</h3>
+                    <h3>Applicatieontwikkeling</h3>
                     <?php
                     $project = new Project();
                     $result = $project->getAllProjects("Applicatieontwikkeling");
@@ -52,7 +52,7 @@ include 'Classes/ProjectDetails.php';
                     ?>
                 </div>
                 <div id="menu5" class="tab-pane fade">
-                    <h3>Games</h3>
+                    <h3>Gamedevelopment</h3>
                     <?php
                     $project = new Project();
                     $result = $project->getAllProjects("Gamedevelopment");
