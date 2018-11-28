@@ -26,6 +26,7 @@ include 'Classes/ProjectDetails.php';
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
                     <h3>Kies in de navigatiebalk een type applicatie om te sorteren.</h3>
+
                 </div>
                 <div id="menu1" class="tab-pane fade">
                     <h3>Webapplicaties</h3>

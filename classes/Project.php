@@ -28,6 +28,20 @@ class Project
         return $result;
     }
 
+    public function getSearchedProject($keyword){
+        $db = Database::getInstance();
+        $conn = $db->getConnection();
+        $sql="SELECT * FROM project WHERE 
+          project_name='$keyword' OR 
+          student_name='$keyword' OR 
+          project_year='$keyword' OR 
+          course='$keyword' OR 
+          type='$keyword'
+          ";
+        $result = $conn->query($sql);
+        return $result;
+    }
+
 //    public function getProjectDetails($project_id){
 //        $db = Database::getInstance();
 //        $conn = $db->getConnection();
