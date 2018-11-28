@@ -2,10 +2,18 @@
 include 'includes/header.php';
 include 'Classes/Project.php';
 include 'Classes/ProjectDetails.php';
+//TODO nieuwe tab-content voor zoekresultaten, automatisch openen na zoeken (geen link er naartoe)
 ?>
+
     <div class="container-fluid page_container">
         <div class="container col-sm-3 desktop_version">
             <img src="images/logoaventus.png" alt="logo">
+
+
+           <?php include 'includes/search.php'; ?>
+
+
+
             <ul class="nav nav-tabs nav-stacked">
                 <li><a data-toggle="tab" href="#menu1" class="nav_link">Webapplicaties</a></li>
                 <li><a data-toggle="tab" href="#menu2">Desktopapplicaties</a></li>

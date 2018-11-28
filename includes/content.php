@@ -15,7 +15,7 @@ while($row=mysqli_fetch_array($result)) {
                         </div>
 
                         <div class="modal fade" id="myModal<?php echo $row['project_id'] ?>" role="dialog">
-                            <div class="modal-dialog modal-lg">
+                            <div class="modal-dialog modal-lg">,
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
