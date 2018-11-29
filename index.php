@@ -2,24 +2,20 @@
 include 'includes/header.php';
 include 'Classes/Project.php';
 include 'Classes/ProjectDetails.php';
-//TODO nieuwe tab-content voor zoekresultaten, automatisch openen na zoeken (geen link er naartoe)
 ?>
 
     <div class="container-fluid page_container">
         <div class="container col-sm-3 desktop_version">
             <img src="images/logoaventus.png" alt="logo">
 
-
            <?php include 'includes/search.php'; ?>
 
-
-
             <ul class="nav nav-tabs nav-stacked">
-                <li><a data-toggle="tab" href="#menu1" class="nav_link">Webapplicaties</a></li>
-                <li><a data-toggle="tab" href="#menu2">Desktopapplicaties</a></li>
-                <li><a data-toggle="tab" href="#menu3" class="nav_link2">Games</a></li>
-                <li><a data-toggle="tab" href="#menu4" class="course_nav_link">Applicatieontwikkeling</a></li>
-                <li><a data-toggle="tab" href="#menu5" class="nav_link">Gamedevelopment</a></li>
+                <li class="tab-toggle"><a data-toggle="tab" href="#menu1" class="nav_link">Webapplicaties</a></li>
+                <li class="tab-toggle"><a data-toggle="tab" href="#menu2">Desktopapplicaties</a></li>
+                <li class="tab-toggle"><a data-toggle="tab" href="#menu3" class="nav_link2">Games</a></li>
+                <li class="tab-toggle"><a data-toggle="tab" href="#menu4" class="course_nav_link">Applicatieontwikkeling</a></li>
+                <li class="tab-toggle"><a data-toggle="tab" href="#menu5" class="nav_link">Gamedevelopment</a></li>
             </ul>
         </div>
         <div class="col-sm-9 content_container">

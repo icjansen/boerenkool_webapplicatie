@@ -61,7 +61,17 @@ while($row=mysqli_fetch_array($result)) {
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="<?php echo $row['download_link'] ?>" class="btn btn-success visit_website">Bezoek website</a>
+                                        <a href="<?php echo $row['download_link'] ?>" class="btn btn-success visit_website"
+                                            <?php if( $row['type'] == "web"){
+                                                echo 'target="_blank"';
+                                            }else{
+                                                echo 'download';
+                                            }?>
+                                        ><?php if( $row['type'] == "desktop" || $row['type'] == "game"){
+                                                echo 'Download applicatie';
+                                            }else{
+                                            echo 'Bezoek website';
+                                            }?></a>
                                         <button type="button" class="btn btn-danger" data-dismiss="modal">Sluiten
                                         </button>
                                         <?php //TODO download-links ipv websitelinks bij desktop en games!?>

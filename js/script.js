@@ -48,5 +48,10 @@ function searchByKeyword(){
     };
     xhttp.open("GET", "getresults.php?q="+keyword, true);
     xhttp.send();
+
+
+    // let element = document.getElementsByClassName("tab-toggle");
+    // element.classList.remove("tab-toggle active");
+
     return false;
 }
