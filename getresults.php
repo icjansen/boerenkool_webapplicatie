@@ -18,5 +18,6 @@ $conn = $db->getConnection();
 ?>
 <?php
 $project = new Project();
-$result = $project->getSearchedProject($_GET['q']);
+$keyword = mysqli_real_escape_string($conn, $_GET['q']);
+$result = $project->getSearchedProject($keyword);
 include 'includes/content.php';
