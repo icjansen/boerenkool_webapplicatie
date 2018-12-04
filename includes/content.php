@@ -25,7 +25,7 @@ while($row=mysqli_fetch_array($result)) {
                                     <div class="modal-body project_details">
                                         <div class="row">
                                             <div class="img_container col-xs-12 col-sm-6">
-                                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                <div id="myCarousel<?php echo $row['project_id'] ?>" class="carousel slide" data-ride="carousel">
 
                                                     <div class="carousel-inner">
 
@@ -43,11 +43,11 @@ while($row=mysqli_fetch_array($result)) {
                                                             <?php
                                                         } ?>
                                                         <!-- Left and right controls -->
-                                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                        <a class="left carousel-control" href="#myCarousel<?php echo $row['project_id'] ?>" data-slide="prev">
                                                             <span class="glyphicon glyphicon-chevron-left"></span>
                                                             <span class="sr-only">Previous</span>
                                                         </a>
-                                                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                                        <a class="right carousel-control" href="#myCarousel<?php echo $row['project_id'] ?>" data-slide="next">
                                                             <span class="glyphicon glyphicon-chevron-right"></span>
                                                             <span class="sr-only">Next</span>
                                                         </a>
@@ -74,7 +74,6 @@ while($row=mysqli_fetch_array($result)) {
                                             }?></a>
                                         <button type="button" class="btn btn-danger" data-dismiss="modal">Sluiten
                                         </button>
-                                        <?php //TODO download-links ipv websitelinks bij desktop en games!?>
                                     </div>
                                 </div>
                             </div>

@@ -23,7 +23,7 @@ class Project
     public function getAllProjects($course){
         $db = Database::getInstance();
         $conn = $db->getConnection();
-        $sql="SELECT * FROM project WHERE course='$course'";
+        $sql = "SELECT * FROM project WHERE course='$course'";
         $result = $conn->query($sql);
         return $result;
     }
@@ -31,14 +31,20 @@ class Project
     public function getSearchedProject($keyword){
         $db = Database::getInstance();
         $conn = $db->getConnection();
+
+        $string = "{$keyword}%";
         $sql="SELECT * FROM project WHERE 
-          project_name='$keyword' OR 
-          student_name='$keyword' OR 
-          project_year='$keyword' OR 
-          course='$keyword' OR 
-          type='$keyword'
+          project_name LIKE ? OR 
+          student_name LIKE ? OR 
+          project_year LIKE ? OR 
+          course LIKE ? OR 
+          type LIKE ?
           ";
-        $result = $conn->query($sql);
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("sssss", $string, $string, $string, $string, $string);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
         return $result;
     }
 
