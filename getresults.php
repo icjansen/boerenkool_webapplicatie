@@ -10,6 +10,11 @@ $project = new Project();
 $keyword = mysqli_real_escape_string($conn, $_GET['q']);
 $result = $project->getSearchedProject($keyword);
 
+if($result->num_rows == null){
+    echo "Geen resultaten gevonden.";
+    exit();
+}
+
 while($row=mysqli_fetch_array($result)) {
     $project_id = $row['project_id'];
     ?>
