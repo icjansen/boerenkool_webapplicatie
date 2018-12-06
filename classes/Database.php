@@ -1,5 +1,7 @@
 <?php
 include './config.php'; /* bij online zetten moet dit ../ zijn */
+
+/**Hier word er een connectie gemaakt met de database*/
 class Database {
 
     private $_connection;

@@ -1,3 +1,5 @@
+<!-- Hier word er een conntctie gemaakt met een online database.-->
+
 <?php
 session_start();
 define('DB_HOST', '185.104.29.16');

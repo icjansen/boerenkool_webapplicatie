@@ -1,3 +1,8 @@
+/** Hier staat de CSS van de website.
+    Hier wordt bij elke schermgrootte vastgelegd waar alles komt te staan en welke kleuren aangegeven moet worden.
+    De kleur en grootte van de navbar, plaatjes/buttons en tekst */
+
+
 @media only screen and (min-width: 668px){
     .mobile_version{
         display: none;
