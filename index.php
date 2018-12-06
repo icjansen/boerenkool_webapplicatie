@@ -10,7 +10,7 @@ include 'Classes/ProjectDetails.php';
 
            <?php include 'includes/search.php'; ?>
 
-            /** Hier word weergeven wat er in de navbar staat op het beginscherm */
+            <!-- Hier word weergeven wat er in de navbar staat op het beginscherm -->
 
 
             <ul class="nav nav-tabs nav-stacked">
@@ -26,7 +26,7 @@ include 'Classes/ProjectDetails.php';
                 </div>
                 <div id="menu1" class="tab-pane fade">
 
-                    /** Hier worden de webapplicaties weergeven */
+                    <!-- Hier worden de webapplicaties weergeven -->
 
 
                     <h3>Webapplicaties</h3>
@@ -37,7 +37,7 @@ include 'Classes/ProjectDetails.php';
                     ?>
                 </div>
 
-                /** Hier worden de desktop applicaties weergeven */
+                <!-- Hier worden de desktop applicaties weergeven -->
 
                 <div id="menu2" class="tab-pane fade">
                     <h3>Desktopapplicaties</h3>
@@ -48,7 +48,7 @@ include 'Classes/ProjectDetails.php';
                     ?>
                 </div>
 
-                /** Hier worden de games weergeven */
+                <!-- Hier worden de games weergeven -->
 
                 <div id="menu3" class="tab-pane fade">
                     <h3>Games</h3>

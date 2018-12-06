@@ -36,7 +36,7 @@ while($row=mysqli_fetch_array($result)) {
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-        /** Hier wordt uit de database opgehaald welke student dit project gemaakt heeft, in welk jaar het gemaakt is en van welke opleiding hij/zij komt */
+        <!-- Hier wordt uit de database opgehaald welke student dit project gemaakt heeft, in welk jaar het gemaakt is en van welke opleiding hij/zij komt -->
 
                     <h4 class="modal-title"><?php echo $row['project_name'] . ", gemaakt door " . $row['student_name'] ?></h4>
                     <h4 class="modal-title">Opleiding: <?php echo $row['course'] ?>, leerjaar: <?php echo $row['project_year'] ?></h4>
@@ -62,7 +62,7 @@ while($row=mysqli_fetch_array($result)) {
                                         <?php
                                     } ?>
 
-                                    /** Hier word van de aangevraagde project een slideshow weergeven met plaatjes voor verduidelijking van het onderwerp. */
+                                    <!-- Hier word van de aangevraagde project een slideshow weergeven met plaatjes voor verduidelijking van het onderwerp. -->
                                     <!-- Left and right controls -->
                                     <a class="left carousel-control" href="#myCarousel<?php echo $row['project_id'] . "-" . $row['project_id'] ?>" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -82,8 +82,8 @@ while($row=mysqli_fetch_array($result)) {
                     </div>
                 </div>
 
-                /** Hier word verteld dat als er een webapplicatie geopend moet worden dan word dat gedaan in een nieuw tabblad
-                Een Desktopapplicatie of een game moet gedownload worden om weergeven te kunnen worden */
+                <!-- Hier word verteld dat als er een webapplicatie geopend moet worden dan word dat gedaan in een nieuw tabblad
+                Een Desktopapplicatie of een game moet gedownload worden om weergeven te kunnen worden -->
 
 
                 <div class="modal-footer">
