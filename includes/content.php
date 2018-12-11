@@ -36,11 +36,16 @@ while($row=mysqli_fetch_array($result)) {
                                             <div class="img_container col-xs-12 col-sm-6">
                                                 <div id="myCarousel<?php echo $row['project_id'] ?>" class="carousel slide" data-ride="carousel">
 
+
+
                                                     <div class="carousel-inner">
 
-                                                        <1-- Hier word het verzochte project uit de database opgeroepen. -->
+
 
                                                         <?php
+                                                        
+                                                          /** Hier word het verzochte project uit de database opgeroepen. */
+
                                                         $project2 = new ProjectDetails();
                                                         $result2 = $project2->getProjectDetails($project_id);
                                                         $i = 0;
