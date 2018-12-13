@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Iris
- * Date: 20-11-2018
- * Time: 13:03
+ Hier word er een nieuwe tabel aangemaakt in de database.
  */
 
 class ProjectDetails

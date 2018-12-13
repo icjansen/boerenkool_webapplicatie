@@ -36,6 +36,8 @@ $(document).ready(function() {
     });
 });
 
+/** De zoekfunctie moet het resultaat van de keyword weergeven in de file getresult.php */
+
 function searchByKeyword(){
     let xhttp;
     let keyword = document.getElementById("search_keyword").value;

@@ -4,6 +4,10 @@ require_once 'Classes/Database.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+<!-- hier worden de files ingevoegd die worden gebruikt voor functies (javascript) en de front-end (Css)-->
+
     <title>Webapplicatie</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +18,10 @@ require_once 'Classes/Database.php';
     <script src="js/script.js"></script>
 </head>
 <body>
+
+
+<!--  2 navbars met logo aventus, horizontaal op mobiel en verticaal op desktop  -->
+
 
 <nav class="navbar navbar-inverse mobile_version">
     <div class="container-fluid">
@@ -37,4 +45,4 @@ require_once 'Classes/Database.php';
 </nav>
 
 
-<!--  2 navbars, horizontaal op mobiel en verticaal op desktop  -->
+

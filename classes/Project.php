@@ -1,9 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Iris
- * Date: 20-11-2018
- * Time: 11:59
+/** Hier word er in de database een tabel aangemaakt onder de naam project.
+   In deze tabel worden de projecten van medestudenten opgeslagen, zodat deze getoond kunnen worden op de website.
  */
 
 class Project
@@ -27,6 +24,9 @@ class Project
 //        $result = $conn->query($sql);
 //        return $result;
 //    }
+
+
+/** Hieronder staat een search functie door in de database zoekt naar het onderwerp waarop gezocht wordt in de searchbar.*/
 
     public function getSearchedProject($keyword){
         $db = Database::getInstance();
