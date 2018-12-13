@@ -15,7 +15,7 @@ class Project
     public function getProjects($type){
         $db = Database::getInstance();
         $conn = $db->getConnection();
-        $sql = "SELECT * FROM project WHERE type = '$type' ORDER BY project_year";
+        $sql = "SELECT * FROM project WHERE type = '$type' ORDER BY project_year DESC";
         $result = $conn->query($sql);
         return $result;
     }

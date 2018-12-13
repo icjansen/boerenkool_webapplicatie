@@ -20,7 +20,7 @@ while($row=mysqli_fetch_array($result)) {
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                         <h4 class="modal-title"><?php echo $row['project_name'] . ", gemaakt door " . $row['student_name'] ?></h4>
-                                        <h4 class="modal-title">Opleiding: <?php echo $row['course'] ?>, leerjaar: <?php echo $row['project_year'] ?></h4>
+                                        <h4 class="modal-title">Opleiding: <?php echo $row['course_name'] ?>, leerjaar: <?php echo $row['project_year'] ?></h4>
                                     </div>
                                     <div class="modal-body project_details">
                                         <div class="row">
@@ -37,7 +37,7 @@ while($row=mysqli_fetch_array($result)) {
                                                             $i++;
                                                             ?>
                                                             <div class="item<?php if($i == 1) { echo " active"; } ?>">
-                                                                <img src="<?php echo $row2['image'] ?>" alt="project_images" style="width:100%;">
+                                                                <img src="./<?php echo $row2['image'] ?>" alt="project_images" style="width:100%;">
                                                             </div>
 
                                                             <?php

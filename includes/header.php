@@ -30,8 +30,6 @@ require_once 'Classes/Database.php';
                 <li><a data-toggle="tab" href="#menu1">Webapplicaties</a></li>
                 <li><a data-toggle="tab" href="#menu2">Desktopapplicaties</a></li>
                 <li><a data-toggle="tab" href="#menu3">Games</a></li>
-                <li><a data-toggle="tab" href="#menu4">Applicatieontwikkeling</a></li>
-                <li><a data-toggle="tab" href="#menu5">Gamedevelopment</a></li>
             </ul>
 <!--            --><?php //include 'includes/search.php'; ?>
         </div>

@@ -1,7 +1,7 @@
 <?php
 include 'includes/header.php';
-include 'Classes/Project.php';
-include 'Classes/ProjectDetails.php';
+include 'config.php';
+//TODO nieuwe tabel in online database voor afbeeldingen: project_details!!!
 ?>
 
     <div class="container-fluid page_container">

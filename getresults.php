@@ -1,7 +1,5 @@
 <?php
-include 'Classes/Database.php';
-include 'Classes/Project.php';
-include 'Classes/ProjectDetails.php';
+include_once 'config.php';
 
 $db = Database::getInstance();
 $conn = $db->getConnection();
@@ -36,7 +34,7 @@ while($row=mysqli_fetch_array($result)) {
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title"><?php echo $row['project_name'] . ", gemaakt door " . $row['student_name'] ?></h4>
-                    <h4 class="modal-title">Opleiding: <?php echo $row['course'] ?>, leerjaar: <?php echo $row['project_year'] ?></h4>
+                    <h4 class="modal-title">Opleiding: <?php echo $row['course_name'] ?>, leerjaar: <?php echo $row['project_year'] ?></h4>
                 </div>
                 <div class="modal-body project_details">
                     <div class="row">
